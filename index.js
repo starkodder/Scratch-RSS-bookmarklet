@@ -39,5 +39,5 @@ box.innerHTML = `<button style="left: 75%; position: fixed; transform: translate
 	<img onclick="deleteFile(&quot;36885973&quot;)" class="trashcan" src="http://selma.friskola.nu/images/trashcan.png">
       </td>
     </tr>
-</tbody></table>`
+</tbody></table>`;
 document.body.appendChild(box);
