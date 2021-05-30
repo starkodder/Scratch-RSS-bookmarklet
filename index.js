@@ -1,4 +1,15 @@
-<button style="left: 75%; position: fixed; transform: translateX(-100%); margin-top: 2px;" onclick="this.parentNode.remove()">X</button><div style="position: fixed;transform: translateX(-50%);left: 50%;/*! top: 50%; */margin-top: 3em;"><input placeholder="Add project (id)"><button>+</button></div>
+box = document.createElement('div');
+box.style = `
+height: 50%;
+width: 50%;
+top: 25%;
+left: 25%;
+position: fixed;
+border: solid 2px;
+background-color: white;
+z-index: 100;
+`;
+box.innerHTML = `<button style="left: 75%; position: fixed; transform: translateX(-100%); margin-top: 2px;" onclick="this.parentNode.remove()">X</button><div style="position: fixed;transform: translateX(-50%);left: 50%;/*! top: 50%; */margin-top: 3em;"><input placeholder="Add project (id)"><button>+</button></div>
 <center style=""><h2>Scratch RSS</h2></center><table style="margin-top: 3em;border: 1px solid black;position: fixed;left: 50%;transform: translateX(-50%);">
 		<style>table img{height: 1em;}</style>
     <tbody style=""><tr>
@@ -28,4 +39,5 @@
 	<img onclick="deleteFile(&quot;36885973&quot;)" class="trashcan" src="http://selma.friskola.nu/images/trashcan.png">
       </td>
     </tr>
-</tbody></table>
+</tbody></table>`
+document.body.appendChild(box);
