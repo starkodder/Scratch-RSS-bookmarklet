@@ -11,9 +11,6 @@ z-index: 100;
 `;
 document.body.appendChild(box);
 
-div = document.createElement('div');
-box.appendChild(div);
-
 element = document.createElement('button');
 element.textContent = 'X';
 element.style = `
@@ -26,10 +23,10 @@ box.appendChild(element);
 
 element = document.createElement('label');
 element.textContent = 'Add project: ';
-div.appendChild(element);
+box.appendChild(element);
 
 element = document.createElement('input');
-div.appendChild(element);
+box.appendChild(element);
 
 element = document.createElement('center');
 element.textContent = 'Scratch RSS';
