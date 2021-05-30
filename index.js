@@ -7,8 +7,12 @@ left: 25%;
 position: fixed;
 border: solid 2px;
 background-color: white;
+z-index: 100;
 `;
 document.body.appendChild(box);
+
+div = document.createElement('div');
+box.appendChild(div);
 
 element = document.createElement('button');
 element.textContent = 'X';
@@ -20,5 +24,13 @@ margin-top: 2px;
 `;
 box.appendChild(element);
 
+element = document.createElement('label');
+element.textContent = 'Add project: ';
+div.appendChild(element);
+
 element = document.createElement('input');
+div.appendChild(element);
+
+element = document.createElement('center');
+element.textContent = 'Scratch RSS';
 box.appendChild(element);
